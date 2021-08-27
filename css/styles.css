@@ -34,11 +34,21 @@ font-family: 'Roboto', sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Header */
 
-.main-nav {
+.page-header .container {
+    display: flex;
+}
+
+.page-header {
+    border-bottom: solid #ECECEC;
+    }
+
+.container .main-nav {
     display: flex;
     }
 
@@ -72,7 +82,7 @@ font-family: 'Roboto', sans-serif;
     /* site-nav */
 
 .site-nav .link {
-display: block;
+display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
 font-style: normal;
@@ -83,11 +93,12 @@ color: var(--title-text-colors);
 }
 
 .contact-nav .link {
+display: flex;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
-    color: var(--primery-color);
+color: var(--primery-color);
     }
 
 .site-nav .link:hover,  
@@ -105,6 +116,10 @@ line-height: 16px;
     margin-left: 93px;
     }
 
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
 .site-nav .item {
     margin-right: 50px;
     }
@@ -120,14 +135,16 @@ line-height: 16px;
 
  /* Contact */
 
- .contact-nav {
-padding-top: 32px;
-padding-bottom: 32px;
+.contact-nav {
+align-items: center;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
- }
+display: flex;
+margin-top: 0; 
+margin-left: auto;
+}
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
@@ -140,13 +157,12 @@ line-height: 16px;
 
 .contact-nav .item + .item {
     margin-left: 50px;
-}
+    }
 
-.contact-nav {
+.contact {
     display: flex;
-    margin-top: 0; 
     margin-left: auto;
-    align-self: flex-end;
+    align-items: center;
 }
 
  /* Hero */
@@ -169,8 +185,7 @@ text-align: center;
 
 .hero {
     background-color: var(--fon-color);
-    margin-bottom: 94px;
-     }
+    }
  
 /* Button */
 
@@ -239,9 +254,15 @@ color: var(--primery-color);
 .priorities-list-title {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
      }
+
+.priorities-item {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}    
 
 .priorities-box {
     width: 270px;
@@ -255,7 +276,6 @@ color: var(--primery-color);
 /* Works */
 
 .section-works {
-padding-top: 94px;
 margin-bottom: 50px;
 margin-top: 0;
 font-style: normal;
@@ -270,12 +290,15 @@ color: var(--title-text-colors);
 .section-list {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     list-style: none;
     padding-bottom: 94px;
-    }   
+    }
+.work-item {
+    display: block;
+}   
 
 .work-item:not(:last-child) {
 margin-right: 30px;
@@ -283,8 +306,12 @@ margin-right: 30px;
 
 /* Command */
 
+.section-command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .command { 
-padding-top: 94px;
 margin-top: 0;
 margin-bottom: 50px;
 font-style: normal;
@@ -342,9 +369,7 @@ color: var(--primery-color);
     padding-right: 15px;
     display: flex;
     list-style: none;
-    padding-bottom: 94px;
-    
-     }
+    }
 
 /* Footer */
 
