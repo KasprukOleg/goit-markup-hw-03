@@ -167,6 +167,11 @@ margin-left: auto;
 
  /* Hero */
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .element-style {
 text-align: center;
 }
@@ -275,6 +280,10 @@ color: var(--primery-color);
 
 /* Works */
 
+.section-work {
+    padding-bottom: 94px;
+}
+
 .section-works {
 margin-bottom: 50px;
 margin-top: 0;
@@ -294,7 +303,7 @@ color: var(--title-text-colors);
     padding-right: 0;
     display: flex;
     list-style: none;
-    padding-bottom: 94px;
+    
     }
 .work-item {
     display: block;
