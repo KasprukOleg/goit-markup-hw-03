@@ -377,8 +377,8 @@ color: var(--primery-color);
     }
 
 .staff {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 /* Footer */
@@ -489,8 +489,7 @@ color: var(--primery-color);
 
 .filter-button {
     background-color: var(--fon-color-button);
-    border: 1px solid var(--accent-color);
-}
+    }
 
  .filter .filter-button:hover,
 .filter .filter-button :focus {
@@ -502,6 +501,7 @@ color: var(--primery-color);
 
 .heading {
 margin-bottom: 4px;
+margin-top: 0;
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
